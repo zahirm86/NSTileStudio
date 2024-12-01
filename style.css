@@ -1,0 +1,50 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.category-card:hover {
+    transform: translateY(-15px); /* Higher transform kept from first style */
+    transition: transform 0.3s ease;
+}
+
+#chatWidget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.tile-gallery {
+    columns: 3;
+    column-gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .tile-gallery {
+        columns: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .tile-gallery {
+        columns: 1;
+    }
+}
+
+.tile-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
