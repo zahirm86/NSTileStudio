@@ -13,7 +13,6 @@ body {
     background-position: center;
     height: 90vh;
 }
-
 .category-card:hover {
     transform: translateY(-15px); /* Higher transform kept from first style */
     transition: transform 0.3s ease;
