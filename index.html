@@ -106,11 +106,11 @@
                     <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80" alt="Floor Tiles" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-3">Floor Tiles</h3>
-                        <ul class="text-gray-600 space-y-2">
-                            <li>• Ceramic Floor Tiles</li>
-                            <li>• Porcelain Floor Tiles</li>
-                            <li>• Natural Stone Tiles</li>
-                            <li>• Anti-Skid Tiles</li>
+                        <ul class="text-gray-600 space-y-2 myList">
+                            <li><button>• Ceramic Floor Tiles</button></li>
+                            <li><button>• Porcelain Floor Tiles</button></li>
+                            <li><button>• Natural Stone Tiles</button></li>
+                            <li><button>• Anti-Skid Tiles</button></li>
                         </ul>
                         <button class="mt-6 text-blue-600 font-semibold flex items-center">
                             View Collection <i class="bi bi-arrow-right ml-2"></i>
@@ -122,11 +122,11 @@
                     <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&q=80" alt="Wall Tiles" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-3">Wall Tiles</h3>
-                        <ul class="text-gray-600 space-y-2">
-                            <li>• Subway Tiles</li>
-                            <li>• Mosaic Wall Tiles</li>
-                            <li>• Decorative Wall Tiles</li>
-                            <li>• 3D Wall Tiles</li>
+                        <ul class="text-gray-600 space-y-2 myList">
+                            <li><button>• Subway Tiles</button></li>
+                            <li><button>• Mosaic Wall Tiles </button></li>
+                            <li><button>• Decorative Wall Tiles</button></li>
+                            <li><button>• 3D Wall Tiles</button></li>
                         </ul>
                         <button class="mt-6 text-blue-600 font-semibold flex items-center">
                             View Collection <i class="bi bi-arrow-right ml-2"></i>
@@ -138,11 +138,11 @@
                     <img src="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?auto=format&fit=crop&q=80" alt="Outdoor Tiles" class="w-full h-64 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-3">Outdoor Tiles</h3>
-                        <ul class="text-gray-600 space-y-2">
-                            <li>• Patio Tiles</li>
-                            <li>• Pool Tiles</li>
-                            <li>• Deck Tiles</li>
-                            <li>• Garden Path Tiles</li>
+                        <ul class="text-gray-600 space-y-2 myList">
+                            <li><button>• Patio Tiles</button></li>
+                            <li><button>• Pool Tiles</button></li>
+                            <li><button>• Deck Tiles</button></li>
+                            <li><button>• Garden Path Tiles</button></li>
                         </ul>
                         <button class="mt-6 text-blue-600 font-semibold flex items-center">
                             View Collection <i class="bi bi-arrow-right ml-2"></i>
@@ -157,7 +157,7 @@
     <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-16">Design Inspiration</h2>
-            <div class="tile-gallery">
+            <div class=" tile-gallery ">
                 <div class="tile-item">
                     <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d" alt="Inspiration 1" class="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                 </div>
@@ -210,7 +210,7 @@
     </section>
 
     <!-- Get In Touch -->
-    <section id="Contact_form" class="py-16 px-4">
+    <section id="Contact_form" class="min-h-screen flex items-center justify-center bg-gray-100">
         <div class="container mx-auto">
             <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
                 <h2 class="text-3xl font-playfair font-bold text-center mb-8">Get In Touch</h2>
@@ -218,24 +218,35 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-gray-700 mb-2">Name</label>
-                            <input type="text" placeholder="Enter Your Name Please..!" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                            <input type="text" placeholder="Enter Your Name Please..!" 
+                                   class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
                         </div>
                         <div>
+                            <label class="block text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" placeholder="Enter Your Phone Number Please..!" 
+                                   class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div class="md:col-span-2">
                             <label class="block text-gray-700 mb-2">Email</label>
-                            <input type="email" placeholder="Enter Your Email Please..!" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                            <input type="email" placeholder="Enter Your Email Please..!" 
+                                   class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
                         </div>
                     </div>
                     <div>
                         <label class="block text-gray-700 mb-2">Message</label>
-                        <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" rows="2" placeholder="Your Massage For US...!"></textarea>
+                        <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" 
+                                  rows="4" placeholder="Your Message For Us...!"></textarea>
                     </div>
-                    <button class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+                    <button type="submit" 
+                            class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
                         Send Message
                     </button>
                 </form>
             </div>
         </div>
     </section>
+    
+    
 
 
     <!-- Footer / Contact Us -->
@@ -245,7 +256,8 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">LuxeTiles</h3>
-                    <p class="text-gray-400">Premium tile solutions for your space</p>
+                    <p class="text-gray-400">Thank you for contacting N.S Tiles !.</p>
+                    <p class="text-gray-400"> Please let us know how we can help you</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Quick Links</h3>
@@ -259,13 +271,33 @@
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact</h3>
                     <ul class="space-y-2 text-gray-400">
-                        <li><i class="bi bi-geo-alt"></i> NARHE SERVICE ROAD, 4, NH, Rajeshahi Thaat Hotel, Narhe, Pune, Maharashtra 411041 Pune, Maharashtra
-                            y</li>
-                        <li><i class="bi bi-telephone"></i>9763478959</li>
-                        <li><i class="bi bi-envelope"></i> info@NStiles.com</li>
+                        <!-- Clickable Location Link -->
+                        <li>
+                            <a href="https://www.google.com/maps/search/?api=1&query=NARHE+SERVICE+ROAD+4+NH+Rajeshahi+Thaat+Hotel+Narhe+Pune+Maharashtra+411041" 
+                               target="_blank" 
+                               class="hover:text-white flex items-center">
+                                <i class="bi bi-geo-alt mr-2"></i> <p></p>
+                                NARHE SERVICE ROAD, 4, NH, Rajeshahi Thaat Hotel, Narhe, Pune, Maharashtra 411041
+                            </a>
+                        </li>
+                
+                        <!-- Clickable Phone Number Link -->
+                        <li>
+                            <a href="tel:+919763478959" class="hover:text-white flex items-center">
+                                <i class="bi bi-telephone mr-2"></i> 9763478959
+                            </a> <p> Paras Sutar</p>
+                        </li>
+                
+                        <!-- Clickable Email Link -->
+                        <li>
+                            <a href="mailto:info@NStiles.com" class="hover:text-white flex items-center">
+                                <i class="bi bi-envelope mr-2"></i> info@NStiles.com
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div>
+                
+                <!-- <div>
                     <h3 class="text-xl font-bold mb-4">Newsletter</h3>
                     <p class="text-gray-400 mb-4">Subscribe for updates and offers</p>
                     <form class="flex">
@@ -275,7 +307,7 @@
                             <i class="bi bi-arrow-right"></i>
                         </button>
                     </form>
-                </div>
+                </div> -->
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                 <p>&copy; 2023 LuxeTiles. All rights reserved.</p>

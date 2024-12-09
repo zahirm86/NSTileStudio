@@ -1,3 +1,12 @@
+// myList item
+const listItems = document.querySelectorAll("#myList li");
+
+  listItems.forEach((li) => {
+    const button = document.createElement("button");
+    button.textContent = li.textContent; // Preserve the text content of the list item
+    li.textContent = ""; // Clear the list item content
+    li.appendChild(button); // Append the button to the list item
+  });
 // Mobile menu toggle
 function toggleMobileMenu() {
     const menu = document.getElementById('mobileMenu');

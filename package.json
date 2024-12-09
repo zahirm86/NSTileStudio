@@ -8,6 +8,6 @@
     "tailwindcss": "^3.4.15"
   },
   "dependencies": {
-    "vite": "^6.0.2"
+    "vite": "^6.0.3"
   }
 }
